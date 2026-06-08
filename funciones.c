@@ -161,7 +161,6 @@ void darDeBaja(Libro_t *catalogo, int *total) {
     int pos = existeId(catalogo, *total, id);
 
     if (pos != -1) {
-        // En lugar de recorrer todos los elementos, reemplazamos el borrado por el último de la lista
         catalogo[pos] = catalogo[*total - 1];
         (*total)--;
         printf("El registro fue removido del almacenamiento de manera exitosa.\n");
